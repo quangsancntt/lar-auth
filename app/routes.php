@@ -15,3 +15,10 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+Route::get('hello',function(){
+	return View::make('index',array(
+						'name'=>'Vu Van San',
+						'age'=> '24'
+						));
+});
